@@ -37,7 +37,7 @@ def password_logic():
     pw = r.password_gen()
     while True:
         print('type "yes" to generate a password')
-        ans1 = input('>> ')
+        ans1 = input('>> ').lower()
         if ans1 == 'yes':
             break
         elif ans1 == '':
